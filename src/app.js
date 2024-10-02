@@ -13,6 +13,7 @@ function addSpeaker(speaker) {
     speaker = {
       name: "",
       counts: words,
+      notes:""
     };
   }
   speakers.push(speaker);
@@ -106,6 +107,7 @@ function renderSpeakers() {
     notesTextarea.value = speaker.notes || "";
     notesTextarea.addEventListener("input", (event) => {
       speaker.notes = event.target.value;
+      console.log(speaker);
     });
 
     const removeSpeakerButton = document.createElement("button");
@@ -213,6 +215,7 @@ function exportReport() {
     const speakerData = {
       name: speaker.name,
       counts: { ...speaker.counts }, // Create a copy of the counts object
+      notes: speaker.notes,
     };
     reportData.push(speakerData);
   });
@@ -292,4 +295,6 @@ const clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener("click", () => {
   speakers = [];
   renderSpeakers();
+  const fileInput = document.getElementById("fileInput");
+  fileInput.value = "";
 });
