@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ah-Counter</title>
+    <link rel="stylesheet" type="text/css" href="src/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="src/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div id="buttons">
+        <button id="toggleScriptBtn" class="button-primary">
+          Hide/Show Script
+        </button>
+        <div id="scriptText" class="hidden">
+          <p>
+            <i
+              >When introduced by the Toastmaster, please state the
+              following:</i
+            >
+          </p>
+          <p>
+            "Greetings Mr./Madam Toastmaster, fellow Toastmasters, and guests.
+            The purpose of the Ah-Counter is to note words and sounds that are
+            used as a "crutch" or "pause filler" by anyone who speaks. During
+            the meeting, I will listen for overused words, including and, well,
+            but, so, and you know. I will also listen for filler sounds,
+            including ah, um, and er. I will also note when a speaker repeats a
+            word or phrase, such as "I, I" or "This means, this means." At the
+            end of the meeting, I will report the number of times that each
+            speaker used these expressions.
+          </p>
+          <p>Thank you, Mr./Madam Toastmaster."</p>
+        </div>
+        <button id="addSpeakerBtn" class="button-primary">Add Speaker</button>
+        <!-- <button id="exportBtn">Export Report</button> -->
+        <button id="generateReportBtn" class="button-primary">
+          Generate Report
+        </button>
+      </div>
+    </div>
+
+    <div id="speakers">
+      <!-- Speaker entries will be dynamically added here -->
+    </div>
+
+    <div id="report"></div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>

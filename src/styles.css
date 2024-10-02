@@ -1,0 +1,74 @@
+* {
+  touch-action: manipulation;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+#scriptText p {
+  padding-right: 20px;
+}
+
+#speakers {
+  margin-top: 160px; /* Adjust the margin to create space below the fixed header */
+}
+
+td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 10px;
+}
+
+.note-cell {
+  display: table-cell;
+}
+
+#toggleScriptBtn {
+  display: block;
+}
+
+.speaker-entry {
+  display: block;
+  margin: 25px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+}
+
+.speaker-entry input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.count-container {
+  margin: 10px 0;
+}
+
+.count-container label {
+  width: 80px;
+  display: inline-block;
+}
+
+.count-container button {
+  margin: 0 10px;
+}
