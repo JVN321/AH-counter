@@ -9,15 +9,18 @@ words_string.forEach(function (word) {
 console.log(words);
 function addSpeaker(speaker) {
   if (speaker != "") {
+    speakers.push(speaker);
+    renderSpeakers();
   } else {
-    speaker = {
+    const speakertemp = {
       name: "",
       counts: words,
       notes:""
     };
-  }
-  speakers.push(speaker);
+  speakers.push(speakertemp);
   renderSpeakers();
+  }
+
 }
 
 function findSpeakerTotal(speaker) {
