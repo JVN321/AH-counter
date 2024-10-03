@@ -14,7 +14,7 @@ function addSpeaker(speaker) {
   } else {
     const speakertemp = {
       name: "",
-      counts: words,
+      counts: JSON.parse(JSON.stringify(words)),
       notes:""
     };
   speakers.push(speakertemp);
